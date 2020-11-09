@@ -38,7 +38,6 @@ class GenerateSalaryCommand extends Command
         $dateFunc = new DateTime();
 
         $begin = new DateTime('NOW');
-        $end = new DateTime(date('Y-m-d', strtotime('+12 months')));
         $end = $dateFunc->modify('+12 month');
 
         // Increment by one month with each iteration
